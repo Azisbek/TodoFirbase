@@ -6,8 +6,8 @@ const Form = () => {
     <FormStyle>
       <div>
         <input type="text" />
-        <input type="date" />
-        <button>ADD</button>
+        {/* <input type="date" />
+        <button>ADD</button> */}
       </div>
     </FormStyle>
   );
