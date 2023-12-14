@@ -8,6 +8,7 @@ const Form = ({ addNewItem }) => {
   const submitChangeHandler = (e) => {
     e.preventDefault();
     const data = {
+      id: Math.random,
       title: titleRef.current.value,
       date: dateRef.current.value,
     };

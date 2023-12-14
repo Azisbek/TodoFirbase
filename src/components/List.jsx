@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import Item from "./Item";
 
-const List = () => {
+const List = ({data}) => {
   return (
     <DivStyle>
         <ul>
-            <li>
-                <label>name</label>
-                <label>date</label>
-            </li>
+            {data.map((data) => (
+                <Item key={data.id} data={data}/>
+            ))}
         </ul>
     </DivStyle>
   )
@@ -26,14 +26,7 @@ const DivStyle = styled.div`
     justify-content: space-between;
     
   }
-  && li {
-    background-color: #00eeff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
-    }
+    
 
 `
 
