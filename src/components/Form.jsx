@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 
-const Form = () => {
+const Form = ({ addNewItem }) => {
+  const titleRef = useRef();
+  const dateRef = useRef();
+
+  const submitChangeHandler = (e) => {
+    e.preventDefault();
+    const data = {
+      title: titleRef.current.value,
+      date: dateRef.current.value,
+    };
+    addNewItem(data);
+  };
+
   return (
-    <FormStyle>
+    <FormStyle onSubmit={submitChangeHandler}>
       <div>
-        <input type="text" />
-        <input type="date" />
+        <input ref={titleRef} type="text" />
+        <input ref={dateRef} type="date" />
         <button>ADD</button>
       </div>
     </FormStyle>
