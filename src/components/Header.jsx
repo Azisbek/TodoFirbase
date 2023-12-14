@@ -18,11 +18,28 @@ const Header = ()=>{
 }
 
 const HeaderStyle = styled.header`
-background-color: red;
+    background-color: #ffe000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-ul{
-    
+
+&& ul li{
+    list-style: none;
+    font-size: 1.5rem;
 }
+
+&& ul{
+    display: flex;
+    gap: 15px;
+}
+
+&& .logo img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+
 `
 
 
