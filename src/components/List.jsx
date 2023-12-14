@@ -1,12 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const List = () => {
-  return (
-    <div>
-        list
-    </div>
-  )
-}
+  return <div>list</div>;
+};
 
-export default List
+export default List;
