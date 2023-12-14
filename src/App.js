@@ -11,8 +11,9 @@ function App() {
 
   return (
     <>
-    <Header/>
-      <Form />
+      <Header />
+      <Form addNewItem={addNewItem} />
+      <List data={data} />
     </>
   );
 }
