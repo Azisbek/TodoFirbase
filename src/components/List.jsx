@@ -23,8 +23,9 @@ const DivStyle = styled.div`
   && ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
   }
     
 
