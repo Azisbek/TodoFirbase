@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const List = () => {
   return (
@@ -37,4 +37,4 @@ const DivStyle = styled.div`
 
 `
 
-export default List
+export default List;
